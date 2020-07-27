@@ -1,0 +1,26 @@
+<html>
+ <head>
+   <title> Login page </title>
+  </head>
+  <link rel='stylesheet' href='Style_css.css' type='text/css' />
+  <body>
+  <center>   <h1 style="font-family:fantasy;text-align="center";font-size:19pt; color:#00FF00;> Login Page </h1></center>
+     <form  align='center' name="login">
+
+       <li><label for="userid">User id:</label>
+         <input type="text" name="userid" size="12" /></li>
+       <li><label for="passid">Password:</label>
+         <input type="password" name="passid" size="12" /></li>
+
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+      </form>
+      <script language="javascript">
+         function check(form)
+          {
+             if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+              { window.open('target.html') }
+               else { alert("Error Password or Username") } }
+              </script>
+             </body>
+              </html>
